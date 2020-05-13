@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+
+  <mat-card *ngFor="let movie of jsonMovies">
+    <p class="name">
+      {{movie["Movie Name"]}}
+      <small class="year">({{movie["Year"]}}) </small>
+    </p>
+    <div class="row">
+      <div class="col">
+
+        <img src="../../assets/movie-img/3idiots.jpg">
+      </div>
+      <div class="col">
+        <p>Availble On</p>
+        <img class="apps" src="../../assets/app-icons/netflix.png">
+        <img class="apps" src="../../assets/app-icons/amazon.png">
+        <img class="apps" src="../../assets/app-icons/hotstar.jpg">
+
+        <p>{{movie["IMDb Rating"]}}</p>
+
+
+      </div>
+    </div>
+  </mat-card>
+
+</div>
